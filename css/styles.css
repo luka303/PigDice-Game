@@ -53,7 +53,7 @@
 }
 
 @keyframes example {
-  from {background-color:blue;}
+  from {background-color: red;}
   to {background-color: yellow;}
 }
 
@@ -67,4 +67,7 @@
 }
 body{
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt8lyjwAuwMxGzupHnznTuVIXOw9_4M5CgdWPpSHqOisTVJPzm)
+}
+#play{
+  font-family: 'Frijole', cursive;
 }
