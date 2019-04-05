@@ -9,9 +9,9 @@
   font-size: 20x;
 }
 #box{
-  border: 2px solid green;
+  border: 2px solid blue;
   width: 700px;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 5%;
   margin-left: 20%;
   margin-right: 20%;
@@ -27,28 +27,38 @@
 #welcome{
   font-family: 'Rye', cursive;
   font-size: 40px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 #hello{
-  border: 2px solid black;
-  width: 250px;
-  height: 250px;;
+  border: 2px solid blue;
+  width: 300px;
+  height: 150px;;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-left: 40%;
+  margin-right: 50%;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  padding-left: 7%;
+  padding-right: 7%;
   font-family: 'Bungee Shade', cursive;
   text-align: center;
-  font-size: 70px;
-  padding-top: 3%;
+  font-size: 100px;
+  padding-top: 1%;
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
   background-color: black
 }
 
 @keyframes example {
-  from {background-color: red;}
+  from {background-color:blue;}
   to {background-color: yellow;}
 }
 
 #button {
   width: 200px;
-  height: 70px;
+  height: 50px;
   background-color: red;
   animation-name: example;
   animation-duration: 1s;
