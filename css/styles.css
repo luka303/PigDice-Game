@@ -105,4 +105,24 @@ text-align: center;
   display: inline-block;
   font-size: 20x;
   float: left;
+  display: block;
+}
+.button2{
+  background-color: red; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20x;
+  float: left;
+  display: block;
+
+}
+h1{
+  font-family: 'Dokdo', cursive;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-size: 40px;
 }
