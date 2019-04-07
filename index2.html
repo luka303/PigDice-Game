@@ -8,7 +8,7 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/scripts.js"></script>
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Dokdo|Frijole" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dokdo|Frijole" rel="stylesheet">
 	<title>PIG DICE GAME</title>
 </head>
 
@@ -21,26 +21,37 @@
 		<div class="row">
 			<div class="col-md-5">
 				<div class="panel panel-body">
-					<h1>PLAYER 1</h1>
+					<h1 class="player">PLAYER 1</h1>
 					<div>
-						<input class="button" type="button" onclick="" value="ROLL">
+						<button id="lava" type="roll" class="btn btn-success" name="player1">Roll</button><br> <br> <br>
+						<br>
 					</div>
 					<div>
-						<input class="button2" type="button" onclick="" value="HOLD">
+						<button id="lava2" type="hold" class="btn btn-danger" name="PLAYER 1">HOLD</button><br> <br>
+						<br>
 					</div>
+					<p>YOU ROLLED<div class="output1"></div><br> <br> <br> <br> <br> <br></p>
+					<p>SUM</p>
+					<div class="output2"></div>
+					</p>
 				</div>
 			</div>
 
 
 			<div class="col-md-6">
 				<div class="panel panel-body">
-					<h1>PLAYER 2</h1>
+					<h1 class="player">PLAYER 2</h1>
 					<div>
-						<input class="button" type="button" onclick="" value="ROLL">
+						<button id="lava" type="roll" class="btn btn-success" name="player1">Roll</button><br> <br> <br>
+						<br>
 					</div>
 					<div>
-						<input class="button2" type="button" onclick="" value="HOLD">
+						<button id="lava2" type="hold" class="btn btn-danger" name="PLAYER 1">HOLD</button><br> <br>
+						<br>
 					</div>
+					<p>YOU ROLLED:<div class="output3"></div><br> <br> <br> <br> <br> <br></p>
+					<p>SUM><div class="output4"></div>
+					</p>
 				</div>
 			</div>
 		</div>
