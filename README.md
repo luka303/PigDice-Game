@@ -7,7 +7,7 @@ The game involves two players who take turns playing against each other rolling 
 # setup/installation instructions
 the game is already set up.One only needs to log in to the live site to play the game.You can also clone the game from  https://github.com/luka303/PigDice-Game
 # Known bugs
-the code is still undergoing corrections and currently does not work as desired
+The hold button currently does not work but it is being worked on
 # Technologies Used
  ##### 1.HTML
  ##### 2.CSS
