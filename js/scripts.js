@@ -24,7 +24,7 @@ playing.prototype.roll1 = function () {
 }
 //to hold
 playing.prototype.hold = function () {
-    this.total += this.Score;
+    this.total += this.score;
     this.currentScore = 0;
     alert("next player");
 }
@@ -36,11 +36,22 @@ $(document).ready(function () {
         player1.roll = rollDice();
         $("#roll1").text(player1.roll)
         player1.rollOne();
-        $("#sum").text(player1.turnScore);
+        $("#sum").text(player1.score);
     });
 });
 
 $("button#lava2").click(function () {
-    player1.hold() ;
-    $("#sum")text(player1.totalscore) ;
+    player1.hold();
+    $("#sum").text(player1.total);
 })
+$("button#lava2").click(function () {
+    playey2.roll = rollDice();
+    $("#roll2").text(player2roll)
+    player2.rollOne();
+    $("#sum").text(player2.score);
+});
+
+$("button#lava2").click(function () {
+    player2.hold();
+    $("sum").text(player2.total);
+});
