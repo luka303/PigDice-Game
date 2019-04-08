@@ -1,12 +1,12 @@
 //business logic
-var player1 =  new player();
-var player2 = new player();
+var player1;
+var player2;
 
-var rollDice = function () {
+var rollDice = function rollDice() {
     return Math.floor(Math.random() * 6) + 1;
 }
 
-function playing() {
+function playing(roll, score,total, player1, player2) {
     this.roll = 0;
     this.score = 0;
     this.total = 0;
@@ -14,7 +14,7 @@ function playing() {
     this.player2 = 0;
 
 }
-playing.prototype.roll1 = function () {
+playing.prototype.roll1 = function (addEventListener) {
     if (this.roll === 1) {
         this.score = 0;
         alert("TOO BAD!YOUU ROLLED A ONE!!")
@@ -32,13 +32,30 @@ playing.prototype.hold = function () {
 
 //user interface
 $(document).ready(function () {
-    $("button#lava").click(function () {
-        player1.roll = rollDice();
-        $("#roll1").text(player1.roll)
-        player1.rollOne();
-        $("#sum").text(player1.score);
+    $("#lava").click(function player1() {
+    var cheza = Math.floor(Math.random() * 6) + 1;
+    parseInt($("#sum").text(cheza));
+
+    if (cheza != 1) {
+        total += cheza;
+        parseInt($("#sum").text(total));
+    }
     });
 });
+
+$(documennt).ready(function() {
+    $(".lava").click(function player2()) {
+        var cheza2 = Math.floor(Math.random() * 6) + 1;
+        parseInt($("#sum").text(cheza2));
+
+        if(cheza2 != 1) {
+            total += cheza2;
+            parseInt($("#sum").text(total));
+        }
+    }
+});
+
+
 
 $("button#lava2").click(function () {
     player1.hold();
@@ -54,4 +71,4 @@ $("button#lava2").click(function () {
 $("button#lava2").click(function () {
     player2.hold();
     $("sum").text(player2.total);
-});
+})
