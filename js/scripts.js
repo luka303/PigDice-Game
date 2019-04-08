@@ -3,13 +3,14 @@ var player1;
 var player2;
 
 var rollDice = function () {
-    return Math.floor(math.random() * 6) + 1;
+    return Math.floor(Math.random() * 6) + 1;
 }
 function playing() {
     this.roll = 0;
     this.score = 0;
     this.total = 0;
-    this.player = 0;
+    this.player1 = 0;
+    this.player2 = 0;
 
 }
 playing.prototype.roll1 = function () {
@@ -21,19 +22,15 @@ playing.prototype.roll1 = function () {
     }
 }
 //to hold
-player.prototype.hold = function() {
-    this.total += this.score;
-    this.score + 0;
+playing.prototype.hold = function() {
+    this.total += this.Score;
+    this.currentScore = 0;
     alert("next player");
-    if (this.score = 100) {
-        alert(!!!"YOU WIN!!!!!")
     }
-}
+
 
 //user interface
 $(document).ready(function () {
-    player1 = new player();
-    player2 = new player();
     $("button#lava").click(function () {
       player1.roll = rollDice();
       $("#roll1").text(player1.roll)
