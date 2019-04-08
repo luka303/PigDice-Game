@@ -22,6 +22,7 @@ the code is still undergoing corrections and currently does not work as desired
 |hold            |next player |points add up       |
 |                |            |and next player turn|
 # live site
+The game can be accessed and played at https://luka303.github.io/PigDice-Game
 
 # contact details
 contact the developer at lukawandanje@gmail.com
