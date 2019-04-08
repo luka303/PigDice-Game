@@ -9,10 +9,10 @@ the game is already set up.One only needs to log in to the live site to play the
 # Known bugs
 the code is still undergoing corrections and currently does not work as desired
 # Technologies Used
- 1.HTML
- 2.CSS
- 3.JAVASCRIPT
- 4.BOOSTRAP
+ ##### 1.HTML
+ ##### 2.CSS
+ ##### 3.JAVASCRIPT
+ ##### 4.BOOSTRAP
 # BDD
 |   behaviour    |   input    |  output            |
 |---------------:|-----------:|--------------------|
@@ -22,6 +22,7 @@ the code is still undergoing corrections and currently does not work as desired
 |hold            |next player |points add up       |
 |                |            |and next player turn|
 # live site
+The game can be accessed and played at https://luka303.github.io/PigDice-Game
 
 # contact details
 contact the developer at lukawandanje@gmail.com
