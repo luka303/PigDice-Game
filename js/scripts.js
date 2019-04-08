@@ -31,30 +31,36 @@ playing.prototype.hold = function () {
 
 
 //user interface
-$(document).ready(function () {
+$(document).ready(function() {
     $("#lava").click(function player1() {
-    var cheza = Math.floor(Math.random() * 6) + 1;
-    parseInt($("#sum").text(cheza));
-
-    if (cheza != 1) {
+      var cheza = Math.floor(Math.random() * 6) + 1;
+      parseInt($("#sum").text(cheza));
+  
+      if (cheza != 1) {
         total += cheza;
         parseInt($("#sum").text(total));
-    }
+      } else {
+        total = 0;
+        parseInt($("#sum").text(total));
+      }
     });
-});
-
-$(documennt).ready(function() {
-    $(".lava").click(function player2()) {
-        var cheza2 = Math.floor(Math.random() * 6) + 1;
-        parseInt($("#sum").text(cheza2));
-
-        if(cheza2 != 1) {
-            total += cheza2;
-            parseInt($("#sum").text(total));
-        }
-    }
-});
-
+  });
+  
+  $(document).ready(function() {
+    $("#lava3").click(function player2() {
+      var cheza2 = Math.floor(Math.random() * 6) + 1;
+      parseInt($("#sum2").text(cheza2));
+  
+      if (cheza2 != 1) {
+        total += cheza2;
+        parseInt($("#sum2").text(total));
+      } else {
+        total = 0;
+        parseInt($("#sum2").text(total));
+      }
+    });
+  });
+  
 
 
 $("button#lava2").click(function () {
