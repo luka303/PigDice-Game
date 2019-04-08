@@ -1,6 +1,6 @@
 //business logic
-var player1;
-var player2;
+var player1 =  new player();
+var player2 = new player();
 
 var rollDice = function () {
     return Math.floor(Math.random() * 6) + 1;
